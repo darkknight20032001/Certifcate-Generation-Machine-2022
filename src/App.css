@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+::before,
+::after,
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
+body {
+  background-color: #59d4d4;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-position: 100% 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.NavBar {
+  background-color: none;
   color: white;
+  text-shadow: 0px 0px 10px red;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid white;
+  background-color: #0000007a;
+}
+.Greetings {
+  border-radius: 10px;
+  width: 20rem;
+  margin: 13rem auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff70;
+  box-shadow: 0px 0px 10px black;
+}
+.Greetings h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-shadow: 0px 0px 10px orange;
+}
+.Greetings p {
+  color: black;
+  text-shadow: 0px 0px 10px rebeccapurple;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.NavBar select {
+  text-shadow: 0px 0px 10px yellow;
+  color: white;
+  background-color: black;
+}
+.Meta {
+  width: fit-content;
+
+  position: absolute;
+  left: 60%;
+  top: 30%;
+}
+input {
+  margin: -3px 5px;
+  padding: 5px;
+}
+.Meta select,
+.Meta input {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 0px 10px;
+}
+label {
+  font-size: 1rem;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: gold;
+  box-shadow: 0px 0px 10px white;
+}
+button {
+  border: 2px solid black;
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+
+  box-shadow: 0px 0px 10px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#DownloadWrapper {
+  box-shadow: 0px 0px 10px yellow;
+  width: 50vw;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 5rem;
+}
+div#certificateWrapper span {
+  width: auto;
+  display: block;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  position: absolute;
+  left: 300px;
+  top: 385px;
+  font-size: 20pt;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
